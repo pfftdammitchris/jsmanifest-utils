@@ -1,0 +1,16 @@
+{
+  "typedocOptions": {
+		"darkHighlightTheme": "material-palenight",
+    "entryPoints": ["src/index.ts"],
+		"readme": "none"
+  },
+  "compilerOptions": {
+		"baseUrl": "./src",
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+		"rootDir": "./src"
+  },
+  "include": ["src/**/*"],
+	"extends": "../../tsconfig.json"
+}
