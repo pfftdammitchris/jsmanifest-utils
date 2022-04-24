@@ -1,0 +1,24 @@
+{
+  "author": "Christopher Tran <pfftdammitchris@gmail.com>",
+  "description": "Utility functions",
+  "files": [
+    "dist"
+  ],
+  "gitHead": "737be0b3cbbf523bf1f579220f807ec150284c8f",
+  "homepage": "",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "name": "@jsmanifest/utils",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production node build.mjs",
+    "build:rollup": "cross-env NODE_ENV=production rollup -c",
+    "start": "cross-env NODE_ENV=development concurrently \"npm run build:types\" \"rollup -c -w\"",
+    "test": "cross-env NODE_ENV=test ts-mocha -p tsconfig.test.json --extensions ts --watch --watch-files \"src/**/*.ts\" \"src/**/*.test.ts\""
+  },
+  "types": "./dist/index.d.ts",
+  "version": "1.0.73"
+}
